@@ -15,13 +15,13 @@ class DivisonAuditsTable
     {
         return $table
             ->columns([
-                TextColumn::make('location_id')
+                TextColumn::make('location.name')
                     ->numeric()
                     ->sortable(),
-                TextColumn::make('department_id')
+                TextColumn::make('department.name')
                     ->numeric()
                     ->sortable(),
-                TextColumn::make('reason_id')
+                TextColumn::make('reason.reason')
                     ->numeric()
                     ->sortable(),
                 TextColumn::make('audit_date')
