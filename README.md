@@ -1,2 +1,14 @@
 # laravel_division_audit
-
+![Image](screenshot/a.png)
+![Image](screenshot/Dashboard.png)
+![Image](screenshot/Department1.png)
+![Image](screenshot/Department2.png)
+![Image](screenshot/Location1.png)
+![Image](screenshot/Location2.png)
+![Image](screenshot/Reason1.png)
+![Image](screenshot/Reason2.png)
+![Image](screenshot/Divisionaudit1.png)
+![Image](screenshot/Divisionaudit2.png)
+![Image](screenshot/Reasonapi.png)
+![Image](screenshot/locationapi.png)
+![Image](screenshot/Departmentapi.png)
