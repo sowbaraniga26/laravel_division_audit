@@ -15,7 +15,7 @@ class ReasonsTable
     {
         return $table
             ->columns([
-                TextColumn::make('department_id')
+                TextColumn::make('department.name')
                     ->numeric()
                     ->sortable(),
                 TextColumn::make('status')
