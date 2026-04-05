@@ -8,5 +8,9 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 use App\Http\Controllers\api\LocationController;
+use App\Http\Controllers\api\DepartmentController;
+
+Route::apiResource('departments', DepartmentController::class);
+Route::get('locations/{id}/departments', [DepartmentController::class, 'byLocation']);
 
 Route::apiResource('locations', LocationController::class);
