@@ -9,6 +9,9 @@ use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
+use Filament\Actions\Action;
+
+
 class DivisonAuditsTable
 {
     public static function configure(Table $table): Table
@@ -44,6 +47,9 @@ class DivisonAuditsTable
             ->recordActions([
                 ViewAction::make(),
                 EditAction::make(),
+                Action::make('download')
+                    ->url(fn ($record): string => route('export', $record->id))
+                    ->openUrlInNewTab()
             ])
             ->toolbarActions([
                 BulkActionGroup::make([
