@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('division_audits', function (Blueprint $table) {
+        Schema::create('divison_audits', function (Blueprint $table) {
             $table->id();
 
             $table->unsignedBigInteger('location_id');
@@ -21,7 +21,7 @@ return new class extends Migration
             $table->date('audit_date');
             $table->string('status')->nullable(); // OK / NOT OK
             $table->text('remarks')->nullable();
-            
+
             $table->timestamps();
         });
     }
