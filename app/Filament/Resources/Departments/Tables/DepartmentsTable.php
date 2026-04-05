@@ -15,7 +15,7 @@ class DepartmentsTable
     {
         return $table
             ->columns([
-                TextColumn::make('location_id')
+                TextColumn::make('location.name')
                     ->searchable(),
                 TextColumn::make('name')
                     ->searchable(),
