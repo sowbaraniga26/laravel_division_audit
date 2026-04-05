@@ -9,6 +9,10 @@ Route::get('/user', function (Request $request) {
 
 use App\Http\Controllers\api\LocationController;
 use App\Http\Controllers\api\DepartmentController;
+use App\Http\Controllers\api\ReasonController;
+
+Route::apiResource('reasons', ReasonController::class);
+Route::get('departments/{id}/reasons', [ReasonController::class, 'byDepartment']);
 
 Route::apiResource('departments', DepartmentController::class);
 Route::get('locations/{id}/departments', [DepartmentController::class, 'byLocation']);
